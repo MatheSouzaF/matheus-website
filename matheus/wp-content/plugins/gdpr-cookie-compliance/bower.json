@@ -1,0 +1,13 @@
+{
+  "name": "gdpr-cookie-compliance",
+  "homepage": "https://www.mooveagency.com/",
+  "authors": [
+    "Moove Agency <plugins@mooveagency.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "postscribe.min": "https://cdnjs.cloudflare.com/ajax/libs/postscribe/2.0.8/postscribe.min.js"
+  },
+  "overrides": {}
+}

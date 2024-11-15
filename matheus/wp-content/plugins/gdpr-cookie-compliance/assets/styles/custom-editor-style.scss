@@ -1,0 +1,36 @@
+.mce-content-body {
+    &.moove_gdpr_privacy_overview_tab_content,
+    &.moove_gdpr_strict_necessary_cookies_tab_content,
+    &.moove_gdpr_performance_cookies_tab_content,
+    &.moove_gdpr_advanced_cookies_tab_content,
+    &.moove_gdpr_cookies_policy_tab_content,
+    &.moove_gdpr_strictly_necessary_cookies_warning,
+    &.moove_gdpr_ifb_content,
+    &.moove_gdpr_modal_strictly_secondary_notice {
+        margin: 10px;
+        max-width: 100%;
+        p, li, a {
+            font: normal 11px/14px Tahoma, Geneva, sans-serif;
+            margin-bottom: 15px;
+            margin-top: 0;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font: normal 14px/18px Tahoma, Geneva, sans-serif;
+            margin-bottom: 15px;
+            margin-top: 0;
+            font-weight: 700;
+            text-transform: none;
+        }
+    }
+    &.moove_gdpr_info_bar_content {
+        margin: 10px;
+        p, li, p a {
+            font: normal 11pt/16pt Arial, sans-serif;
+            margin: 0;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font: normal 11pt/16pt Arial, sans-serif;
+            margin: 0;
+        }
+    }
+}

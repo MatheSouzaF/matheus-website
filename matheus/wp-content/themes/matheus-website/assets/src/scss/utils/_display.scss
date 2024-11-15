@@ -1,0 +1,28 @@
+$displayProps: (
+  "block",
+  "inline-block",
+  "inline",
+  "flex",
+  "grid",
+  "inline-flex",
+  "inline-grid",
+  "none"
+);
+
+@each $disp in $displayProps {
+  .d-#{$disp} {
+    display: #{$disp};
+  }
+}
+
+/* Directions */
+$directions: (
+  "row",
+  "column"
+);
+
+@each $direction in $directions {
+  .flex-#{$direction} {
+    flex-direction: #{$direction};
+  }
+}

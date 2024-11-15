@@ -1,0 +1,74 @@
+@use "sass:math";
+
+$grid-columns: 12;
+$grid-sm-columns: 6;
+
+.wrapper {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 16px;
+  margin: 0 auto;
+
+  @include media-breakpoint-up(sm) {
+    padding: 0 40px;
+  }
+
+  @include media-breakpoint-up(md) {
+    padding: 0 48px;
+
+  }
+
+  @include media-breakpoint-up(lg) {
+    // max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+// Col classes
+@mixin col-general($grid-columns) {
+  @for $i from 1 through $grid-columns {
+    .col-#{$i} {
+      box-sizing: border-box;
+      flex-grow: 0;
+      width: math.div($i * 100%, $grid-columns);
+    }
+  }
+}
+
+@mixin col-breakpoint($breakpoint, $grid-columns) {
+  @if $breakpoint ==sm {
+    @include media-breakpoint-up(sm) {
+      @include col-general($grid-columns);
+    }
+  }
+
+  @else if $breakpoint ==md {
+    @include media-breakpoint-up(md) {
+      @include col-general($grid-columns);
+    }
+  }
+
+  @else if $breakpoint ==lg {
+    @include media-breakpoint-up(lg) {
+      @include col-general($grid-columns);
+    }
+  }
+
+  @else if $breakpoint ==xl {
+    @include media-breakpoint-up(xl) {
+      @include col-general($grid-columns);
+    }
+  }
+}
+
+@include col-general($grid-columns);
+
+@include col-breakpoint(sm, $grid-sm-columns);
+@include col-breakpoint(md, $grid-columns);
+@include col-breakpoint(lg, $grid-columns);
+@include col-breakpoint(xl, $grid-columns);

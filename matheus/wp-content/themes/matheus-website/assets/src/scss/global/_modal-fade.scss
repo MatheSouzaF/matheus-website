@@ -1,0 +1,18 @@
+.fade {
+  opacity: 0;
+  -webkit-transition: all .1s linear;
+  -o-transition: all .1s linear;
+  transition: all .1s linear;
+}
+
+.fade.show {
+  opacity: 1;
+}
+
+.fade .modal-dialog {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) !important;
+}

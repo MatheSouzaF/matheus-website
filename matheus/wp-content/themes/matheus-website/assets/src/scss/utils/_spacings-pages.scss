@@ -1,0 +1,35 @@
+.section-padding {
+  padding-bottom: 6rem;
+
+  @include media-breakpoint-up(sm) {
+    padding-bottom: 7rem;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding-bottom: 8rem;
+  }
+}
+
+.section-padding-lg {
+  padding-bottom: 10rem;
+
+  @include media-breakpoint-up(sm) {
+    padding-bottom: 11rem;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding-bottom: 12rem;
+  }
+}
+
+.section-margin {
+  margin-bottom: 3rem;
+
+  @include media-breakpoint-up(sm) {
+    margin-bottom: 4rem;
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 5rem;
+  }
+}
