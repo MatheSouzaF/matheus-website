@@ -1,6 +1,43 @@
 @font-face {
-  font-family: your-font;
-  font-weight: bold;
+  font-family: planet;
+  font-weight: 400;
   font-style: normal;
-  src: url('../../src/fonts/your-font') format('opentype');
+  src: url('../../src/fonts/planet.TTF') format('truetype');
+}
+@font-face {
+  font-family: photograph;
+  font-weight: 400;
+  font-style: normal;
+  src: url('../../src/fonts/photograph-signature.TTF') format('truetype');
+}
+@font-face {
+  font-family: Gatwick;
+  font-weight: 300;
+  font-style: normal;
+  src: url('../../src/fonts/Gatwick-Light.otf') format('opentype');
+}
+@font-face {
+  font-family: Gatwick;
+  font-weight: 400;
+  font-style: normal;
+  src: url('../../src/fonts/Gatwick-Regular.otf') format('opentype');
+}
+@font-face {
+  font-family: Gatwick;
+  font-weight: 700;
+  font-style: normal;
+  src: url('../../src/fonts/Gatwick-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: Ambit;
+  font-weight: 300;
+  font-style: normal;
+  src: url('../../src/fonts/Ambit-Light.otf') format('opentype');
+}
+@font-face {
+  font-family: Ambit;
+  font-weight: 400;
+  font-style: normal;
+  src: url('../../src/fonts/Ambit-Regular.otf') format('opentype');
 }

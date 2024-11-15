@@ -1,0 +1,53 @@
+@import '../global/breakpoints';
+@import '../global/colors';
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -60px;
+  z-index: 1;
+  position: relative;
+  background: #fff;
+  border-radius: 50px 50px 0px 0px;
+  padding: 90px 0 20px;
+  transition: 0.6s;
+  @include media-breakpoint-up(sm) {
+    padding: 0 50px;
+    height: 136px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .svg-sintta {
+    margin-bottom: 64px;
+    @include media-breakpoint-up(sm) {
+      margin-bottom: inherit;
+    }
+  }
+  .repetidor-links {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 32px;
+    margin-bottom: 90px;
+    @include media-breakpoint-up(sm) {
+      margin-bottom: inherit;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .insta-active {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      p {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 100%; /* 12px */
+        letter-spacing: 0.6px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

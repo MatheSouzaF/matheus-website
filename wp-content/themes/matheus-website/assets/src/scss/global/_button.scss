@@ -1,0 +1,58 @@
+@import '../global/breakpoints';
+@import '../global/colors';
+.btn-base {
+  padding: 20px 24px;
+  background-color: $laranja;
+  border-radius: 4000px;
+  transition: 0.6s;
+  p {
+    transition: 0.6s;
+  }
+  &:hover {
+    background-color: $azul-raso;
+  }
+}
+.btn-azul-profundo {
+  border-radius: 8px;
+  border: 2px solid #005657;
+  background: #005657;
+  max-width: 380px;
+  transition: 0.6s;
+  display: flex;
+  &:hover {
+    background-color: $turquesa;
+    border: 2px solid #92d5d8;
+  }
+  p {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; /* 12px */
+    letter-spacing: 1.2px;
+  }
+}
+.btn-azul-turquesa {
+  border-radius: 8px;
+  border: 2px solid $turquesa;
+  background: $turquesa;
+  max-width: 380px;
+  transition: 0.6s;
+  display: flex;
+
+  p {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; /* 12px */
+    letter-spacing: 1.2px;
+    color: $azul-profundo;
+  }
+  &:hover {
+    background: transparent;
+  border: 2px solid #fff;
+
+    p {
+      color: #fff;
+    }
+  }
+}

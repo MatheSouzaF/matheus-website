@@ -1,0 +1,127 @@
+// Fonts
+$nohemi: your-font;
+$aeonik: your-font;
+$neuePower: your-font;
+$font-weight: 300;
+$lighter: lighter;
+$line-main: 140%;
+
+// Upper
+$titles-upper-one: clamp(82px, 5vw, 114px);
+$titles-upper-two: clamp(66px, 5vw, 98px);
+$titles-upper-three: clamp(50px, 5vw, 82px);
+$titles-upper-four: clamp(34px, 5vw, 66px);
+
+// Lower
+$titles-lower-one: clamp(34px, 5vw, 50px);
+$titles-lower-one-v2: clamp(24px, 5vw, 40px);
+$titles-lower-two: clamp(18px, 5vw, 34px);
+$titles-lower-three: clamp(18px, 5vw, 26px);
+$titles-lower-three-v2: clamp(16px, 5vw, 20px);
+$titles-lower-four: clamp(16px, 5vw, 18px);
+$titles-lower-five: clamp(16px, 5vw, 16px);
+
+//Body
+$body-large: clamp(16px, 5vw, 20px);
+$body-medium: clamp(14px, 5vw, 16px);
+$body-small: clamp(12px, 5vw, 14px);
+
+.titles-upper-one {
+  font-size: $titles-upper-one;
+  line-height: $line-main;
+  font-weight: $font-weight;
+}
+.titles-upper-one-v2 {
+  font-family: $neuePower;
+  font-size: $titles-upper-one;
+  line-height: $line-main;
+  font-weight: $font-weight;
+}
+.titles-upper-two {
+  font-size: $titles-upper-two;
+  line-height: $line-main;
+  font-weight: $font-weight;
+}
+
+.titles-upper-three {
+  font-size: $titles-upper-three;
+  line-height: $line-main;
+  font-weight: $font-weight;
+}
+
+.titles-upper-four {
+  font-size: $titles-upper-four;
+  line-height: $line-main;
+  font-weight: $font-weight;
+}
+
+.titles-lower-one {
+  font-size: $titles-lower-one;
+  line-height: $line-main;
+  font-weight: $font-weight;
+}
+.titles-lower-one-v2 {
+  font-size: $titles-lower-one-v2;
+  line-height: $line-main;
+  font-weight: $font-weight;
+}
+
+.titles-lower-two {
+  font-size: $titles-lower-two;
+  line-height: $line-main;
+  font-weight: $font-weight;
+}
+
+.titles-lower-three {
+  font-size: $titles-lower-three;
+  line-height: $line-main;
+  font-weight: $font-weight;
+}
+
+.titles-lower-four {
+  font-size: $titles-lower-four;
+  line-height: $line-main;
+  font-weight: $font-weight;
+}
+.titles-lower-five {
+  font-size: $titles-lower-five;
+  line-height: $line-main;
+  font-weight: $font-weight;
+}
+
+.body-small {
+  font-size: $body-small;
+  line-height: $line-main;
+  font-weight: $font-weight;
+  letter-spacing: 0.9px;
+}
+
+.body-medium {
+  font-size: $body-medium;
+  line-height: $line-main;
+  font-weight: $font-weight;
+  letter-spacing: 0.9px;
+}
+
+.body-large {
+  font-size: $body-large;
+  line-height: $line-main;
+  font-weight: $font-weight;
+  letter-spacing: 0.9px;
+}
+
+.bold-3 {
+  font-weight: 300;
+}
+.bold-4 {
+  font-weight: 400;
+}
+.bold-5 {
+  font-weight: 500;
+}
+.bold-6 {
+  font-weight: 600;
+}
+.bold-7 {
+  font-weight: 700;
+}

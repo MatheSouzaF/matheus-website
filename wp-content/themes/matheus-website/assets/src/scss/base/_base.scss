@@ -2,35 +2,23 @@ html {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: planet;
 }
-.lenis {
-  &.lenis-smooth {
-    scroll-behavior: auto;
-
-    [data-lenis-prevent] {
-      overscroll-behavior: contain;
-    }
-  }
-
-  &.lenis-stopped {
-    overflow: hidden;
-  }
-
-  &.lenis-scrolling iframe {
-    pointer-events: none;
+body {
+  overflow-x: hidden;
+  color: $black;
+}
+.moove-gdpr-cookie-notice {
+  p {
+    font-family: 'Outfit', sans-serif !important;
   }
 }
+.moove-gdpr-button-holder {
+  .moove-gdpr-infobar-allow-all {
+    font-family: 'Outfit', sans-serif !important;
 
-.smooth-scroll {
-  width: 100vw;
+  }
 }
-#scroll-content {
-  position: relative;
-}
-.bg-modal {
-  background-color: rgba($color: #000000, $alpha: 0.8);
-}
-
 sup {
   vertical-align: super;
   font-size: 0.7em;
@@ -43,4 +31,8 @@ textarea {
 
 .d-none {
   display: none !important;
+}
+
+.link {
+  cursor: pointer;
 }

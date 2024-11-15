@@ -1,0 +1,46 @@
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.lenis {
+  &.lenis-smooth {
+    scroll-behavior: auto;
+
+    [data-lenis-prevent] {
+      overscroll-behavior: contain;
+    }
+  }
+
+  &.lenis-stopped {
+    overflow: hidden;
+  }
+
+  &.lenis-scrolling iframe {
+    pointer-events: none;
+  }
+}
+
+.smooth-scroll {
+  width: 100vw;
+}
+#scroll-content {
+  position: relative;
+}
+.bg-modal {
+  background-color: rgba($color: #000000, $alpha: 0.8);
+}
+
+sup {
+  vertical-align: super;
+  font-size: 0.7em;
+  margin-right: 5px;
+}
+
+textarea {
+  word-wrap: break-word;
+}
+
+.d-none {
+  display: none !important;
+}
