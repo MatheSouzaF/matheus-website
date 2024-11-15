@@ -1,6 +1,6 @@
-# WordPress Gulp and Webpack starter theme
+# Engie Website 2023 Development
 
-![](screenshot.png)
+![](wp-content/themes/lohn-2023/screenshot.png)
 
 ## Under the hood
 
@@ -20,43 +20,21 @@
 
 Primeiro, clone este repositório no diretório de temas do WordPress.
 
-Em seguida, execute os seguintes comandos no diretório do tema para instalar as dependencias:
+Em seguida, execute os seguintes comandos no diretório do tema para instalar as dependencias :
 
     npm install
 
-Execute a aplicação no modo de desenvolvimento:
+Launch your watch for assets with :
 
     npm run start
 
-Para produção, crie um build:
+For production sites, create your build with :
 
     npm run build
 
 Para compilar e minificar JS:
 
-    npm run build-compiled
-
-Para abrir a GUI do Cypress:
-
-    npm run cypress:open
-
-Para rodar os testes no terminal:
-
-    npm run cypress:run
-
-Para executar os testes no BrowserStack, é necessário instalar o CLI da ferramenta com o seguinte comando:
-
-    npm install -g browserstack-cypress-cli
-
-O arquivo `browserstack.json` contém as configurações necessárias para o ambiente dos testes no BrowserStack, la você deve definir a sua conta do BrowserStack e os devices que rodarão os testes.
-
-Rode os testes E2E nos devices do BrowserStack com o comando:
-
-    browserstack-cypress run
-
-Para rodar o Prettier no tema
-
-    npm run format
+npm run build-compiled
 
 ## Descrição
 
@@ -76,3 +54,11 @@ Para rodar o Prettier no tema
 - Para adicionar imagens ao projeto use o caminho 'assets/src/img'.
 
 - Para adicionar svg ao projeto use o caminho 'assets/src/svg'.
+
+## Utilizar WPCLI no Docker:
+
+Execute o comando:
+
+docker exec <id-do-container-wp-cli> wp core version
+
+E o script wpcli estará disponível, de fora do docker.

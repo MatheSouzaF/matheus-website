@@ -1,3 +1,0 @@
-function initPage() {}
-
-export {initPage};
