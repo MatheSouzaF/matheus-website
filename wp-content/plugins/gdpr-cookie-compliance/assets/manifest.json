@@ -1,0 +1,71 @@
+{
+  "dependencies": {
+    "main.js": {
+      "files": [
+        "scripts/gdpr_lightbox.js",
+        "scripts/main.js"
+      ],
+      "main": true
+    },
+    "codemirror.js": {
+      "files": [
+        "scripts/codemirror.js"
+      ],
+      "main": false
+    },
+    "gdpr-main.css": {
+      "files": [
+        "styles/frontend/main.scss"
+      ],
+      "main": true
+    },
+    "gdpr-main-nf.css": {
+      "files": [
+        "styles/frontend/main-nf.scss"
+      ],
+      "main": true
+    },
+    "font.css": {
+      "files": [
+        "styles/font.scss"
+      ],
+      "main": false
+    },
+    "base.css": {
+      "files": [
+        "styles/base.scss"
+      ],
+      "main": false
+    },
+    "admin.css": {
+      "files": [
+        "styles/admin.scss"
+      ],
+      "main": false
+    },
+    "custom-editor-style.css": {
+      "files": [
+        "styles/custom-editor-style.scss"
+      ],
+      "main": false
+    },
+    "colorpicker.js": {
+      "files": [
+        "scripts/colorpicker.js"
+      ],
+      "main": false
+    },
+    "admin.js": {
+      "files": [
+        "scripts/admin.js"
+      ],
+      "main": false
+    },
+    "jquery.js": {
+      "bower": ["jquery"]
+    }
+  },
+  "config": {
+    "devUrl": "https://mplugins.local"
+  }
+}

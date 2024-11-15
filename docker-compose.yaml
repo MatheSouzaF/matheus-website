@@ -1,0 +1,65 @@
+version: "3"
+
+services:
+  apache:
+    image: "php:w16-wp"
+    restart: always
+    build:
+      context: ./
+      dockerfile: ./Docker/Dockerfile
+    ports:
+      - "80:80"
+    volumes:
+      - .:/var/www/html
+    depends_on:
+      - db
+    networks:
+      - docker-network
+
+  db:
+    image: mysql
+    restart: always
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+    volumes:
+      - "wp-db:/var/lib/mysql"
+    networks:
+      - docker-network
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      UPLOAD_LIMIT: 200M
+    ports:
+      - "8080:80"
+    networks:
+      - docker-network
+    volumes:
+      - ./Docker/uploads.ini:/usr/local/etc/php/conf.d/php-phpmyadmin.ini
+
+  wpcli:
+    depends_on:
+      - apache
+    image: wordpress:cli
+    user: 1000:1000
+    command: tail -f /dev/null
+    volumes:
+      - .:/var/www/html
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: root
+      WORDPRESS_DB_PASSWORD: root
+      WORDPRESS_DB_NAME: pba
+    networks:
+      - docker-network
+
+networks:
+  docker-network:
+    driver: bridge
+
+volumes:
+  wp-db:
+    driver: local

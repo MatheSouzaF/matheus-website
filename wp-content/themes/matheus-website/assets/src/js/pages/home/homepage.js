@@ -1,0 +1,3 @@
+function initPage() {}
+
+export {initPage};

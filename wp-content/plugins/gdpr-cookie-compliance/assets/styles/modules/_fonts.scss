@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/nunito-v8-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/nunito-v8-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/nunito-v8-latin-regular.woff2") format("woff2"), url("../fonts/nunito-v8-latin-regular.woff") format("woff"), url("../fonts/nunito-v8-latin-regular.ttf") format("truetype"), url("../fonts/nunito-v8-latin-regular.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 400; 
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/nunito-v8-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/nunito-v8-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/nunito-v8-latin-700.woff2") format("woff2"), url("../fonts/nunito-v8-latin-700.woff") format("woff"), url("../fonts/nunito-v8-latin-700.ttf") format("truetype"), url("../fonts/nunito-v8-latin-700.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 700; 
+  font-display: swap;
+}

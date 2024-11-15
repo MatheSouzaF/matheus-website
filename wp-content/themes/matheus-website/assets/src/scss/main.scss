@@ -1,0 +1,15 @@
+// Global
+@import './global';
+
+//Templates Section
+@import './templates/';
+
+// Utils
+@import './utils';
+
+// Base
+@import './base/base';
+
+
+// Não incluir pages diretamente no main.css. Deverá ser puxada em cada página utilizando enqueue_style(), puxando da pasta dist
+// @import "./pages"
