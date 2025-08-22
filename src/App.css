@@ -1,0 +1,36 @@
+body {
+  background-color: #1e1e2f;
+  font-family: "Instrument Sans", sans-serif;
+}
+.link-button {
+  position: relative;
+}
+.link-button::after {
+  content: "";
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  transition: 0.6s;
+  left: 0;
+  position: absolute;
+  background-color: #fff;
+}
+.link-button:hover::after {
+  width: 100%;
+}
+.t-06 {
+  transition: 0.6s;
+}
+.sidebar {
+  position: fixed;
+  background-color: #261d1f;
+  top: -100%;
+  left: 0;
+  transition: 1s;
+}
+.sidebar--open {
+  top: 0;
+}
+.w-fit {
+  width: fit-content;
+}
