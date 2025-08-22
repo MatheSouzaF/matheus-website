@@ -1,0 +1,39 @@
+name: Deploy to Hostinger (FTP)
+
+on:
+  push:
+    branches: [main] # mude para "master" se sua branch principal for essa
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Instalar dependências
+        run: npm ci
+
+      - name: Build do projeto
+        run: npm run build # Vite: "dist/"; CRA: "build/"
+
+      - name: Aguardar antes do deploy
+        if: ${{ secrets.DEPLOY_DELAY_SECONDS != '' }}
+        run: sleep ${{ secrets.DEPLOY_DELAY_SECONDS }}
+
+      - name: Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: ${{ secrets.FTP_PORT || 21 }}
+          local-dir: dist/ # troque para "build/" se for CRA
+          server-dir: public_html/ # ajuste se seu site estiver em outra pasta
+          dangerous-clean-slate: true
