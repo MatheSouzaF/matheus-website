@@ -25,10 +25,10 @@ export default function Header() {
         </svg>
       </a>
       <nav className="items-center hidden gap-8 box-header-links md:flex">
-        <a href="" className="text-white link-button">
+        <a href="#about" className="text-white link-button">
           Sobre
         </a>
-        <a href="" className="text-white link-button">
+        <a href="#carousel" className="text-white link-button">
           Projetos
         </a>
         <a

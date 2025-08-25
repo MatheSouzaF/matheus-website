@@ -1,0 +1,21 @@
+# .htaccess em /public_html/matheus-website
+RewriteEngine On
+RewriteBase /matheus-website/
+
+# se o arquivo ou diretório existir, serve direto
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# senão, manda para o index.html da subpasta (SPA)
+RewriteRule . /matheus-website/index.html [L]
+
+# (Opcional) MIME — raramente precisa, mas pode manter
+<IfModule mod_mime.c>
+  AddType application/javascript .js .mjs
+  AddType application/wasm .wasm
+  AddType text/css .css
+</IfModule>
+
+Header set X-Content-Type-Options "nosniff"
+    

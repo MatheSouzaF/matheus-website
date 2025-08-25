@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import About from "./components/About";
 import { Banner } from "./components/Banner";
 import Carousel from "./components/Carousel";
 import { Footer } from "./components/Footer";
@@ -12,6 +13,7 @@ function App() {
     <div className="wrapper">
       <Header />
       <Banner />
+      <About />
       <Carousel />
       <Footer />
     </div>

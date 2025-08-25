@@ -1,6 +1,40 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: #1e1e2f;
+  background-color: #003135;
   font-family: "Instrument Sans", sans-serif;
+}
+.color-1 {
+  color: #003135;
+}
+.color-2 {
+  color: #024950;
+}
+.color-3 {
+  color: #0faa4f;
+}
+.color-4 {
+  color: #964734;
+}
+.color-5 {
+  color: #afdde5;
+}
+.bg-1 {
+  background-color: #003135;
+}
+.bg-2 {
+  background-color: #024950;
+}
+.bg-3 {
+  background-color: #0faa4f;
+}
+.bg-4 {
+  background-color: #964734;
+}
+.bg-5 {
+  background-color: #afdde5;
 }
 .link-button {
   position: relative;
